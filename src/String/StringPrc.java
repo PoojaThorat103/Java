@@ -19,5 +19,11 @@ public class StringPrc
 		
 		System.out.println("is it equals =  " + name1.equals(name2)); // VALUE MUST BE SAME 
 		System.out.println(name1.equalsIgnoreCase(name2));// THIS IS equalsIgnoreCase 
+		
+		
+		String s1 = "Pooja Sd fddp";
+	//	s1= s1.replace('P', 'J');
+	 System.out.println(s1.replace('P', 'J'));
+		
 	}
 }

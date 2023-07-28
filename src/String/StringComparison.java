@@ -5,6 +5,21 @@ public class StringComparison
 	public static void main(String []args)
 	{	
 		
+	/*ALL ABOUT STRING :
+	String is the sequence of characters
+	String is non- Primitive data type - means size is not fixed
+	String is a class
+	String is an immutable object		
+	To create strings there are 3 classes : String, String buffer, String builder
+		
+	String class syntax : 
+			
+			public final class String extends Object implements CharSequence, Serialiable, Comparable () {
+			
+		}*/
+		
+		
+		
 	/*There are two ways to create String object:
 
 		By string literal
@@ -88,29 +103,51 @@ public class StringComparison
 			String n2 = " thorat ";
 			System.out.println(n2.trim());
 			String n3 = n1.concat(n2);
+			String n1 =  "sdsf" + "sfsd";
 			// ------------------------------------------------------------------------
-	        StringBuilder s1 = new StringBuilder("Hello");    //String 1  
-	        StringBuilder s2 = new StringBuilder(" World");    //String 2  
-	        StringBuilder s = s1.append(s2);   //String 3 to store the result 
-	        System.out.println(s.toString());  //Displays result  
+	  
+	        */
 	        
-	        StringBuffer p1 = new StringBuffer("pooja is married with sahil");
-	        StringBuffer p4=   p1.reverse();
-	        System.out.println(p4);*/
+	    	// *********************************** 	Java String isEmpty() *******************       
 	        
-	        /*
-	        StringBuffer sb=new StringBuffer("Hello ");  
-	        sb.insert(3,"Java");//now original string is changed  
-	        System.out.println(sb);*/
+	        String city = "";
+	        System.out.println(city.isEmpty());
 	        
-	        StringBuffer sbw=new StringBuffer("Hellopo ");  
-	        sbw.replace(2, 3, "sahil");
-	        System.out.println(sbw);
+	        //Note : Note that here empty means the number of characters contained in a string is zero.
+	        
+	
+	       //  *********************************** 	Java String equalsIgnoreCase()n *******************   
+	        
+	     //   Note : doesn't check the case sensitivity
+	        /*String Country = "InDIa";
+	        String Country1 = "india";
+	        String Country2 = "AAAA";
+ 
+	        System.out.println(Country.equalsIgnoreCase(Country1)); //true because content and case both are same  
+	        System.out.println(Country1.equalsIgnoreCase(Country2)); //false because content is not same  
+	        */
+	        
+	        String name1 = "Pooja" ;
+	        String name2 = "sfsd";
+	        
+	        String name3 = "Pooja";
+	        
+	        String name4 = new String ("Pooja");
 	        
 	        
+	        System.out.println("-----" + name1.equals(name3));
+	        System.out.println(name1 == name3);
+	        
+	        System.out.println("-----" + name1.equals(name4)); // equals compare value 
+	        System.out.println(name1 == name4);//  ==  compare referance 
+	        
+
 			}
 	
-	
+	/*
+	Note :  equals compare value of the string
+			==  compare referance 
+	*/
 	
 	
 	
